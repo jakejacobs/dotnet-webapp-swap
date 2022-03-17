@@ -41,7 +41,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'Free Trial(736afc21-3c5a-4358-8a18-c5298f534a16)'
+    azureSubscription: 'Free Trial (736afc21-3c5a-4358-8a18-c5298f534a16)'
     appType: 'webAppLinux'
     WebAppName: 'dotnetsampleserver'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
