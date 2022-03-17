@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: devopsagent
+  name: dotnetagent
   vmImage: ubuntu-latest
 
 variables:
