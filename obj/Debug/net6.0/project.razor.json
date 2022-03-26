@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/jakejacobs/jake/code/azure_devops/hello_world/Helloworld/Helloworld/Helloworld.csproj",
+  "FilePath": "/home/jakejacobs/jake/code/azure_devops/dotnet_app/Helloworld/Helloworld/Helloworld.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,38 +16298,38 @@
   "RootNamespace": "Helloworld",
   "Documents": [
     {
-      "FilePath": "/home/jakejacobs/jake/code/azure_devops/hello_world/Helloworld/Helloworld/Views/_ViewStart.cshtml",
+      "FilePath": "/home/jakejacobs/jake/code/azure_devops/dotnet_app/Helloworld/Helloworld/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/jakejacobs/jake/code/azure_devops/hello_world/Helloworld/Helloworld/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/jakejacobs/jake/code/azure_devops/hello_world/Helloworld/Helloworld/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/jakejacobs/jake/code/azure_devops/hello_world/Helloworld/Helloworld/Views/_ViewImports.cshtml",
+      "FilePath": "/home/jakejacobs/jake/code/azure_devops/dotnet_app/Helloworld/Helloworld/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/jakejacobs/jake/code/azure_devops/hello_world/Helloworld/Helloworld/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "/home/jakejacobs/jake/code/azure_devops/dotnet_app/Helloworld/Helloworld/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/jakejacobs/jake/code/azure_devops/hello_world/Helloworld/Helloworld/Views/Home/Index.cshtml",
+      "FilePath": "/home/jakejacobs/jake/code/azure_devops/dotnet_app/Helloworld/Helloworld/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/jakejacobs/jake/code/azure_devops/dotnet_app/Helloworld/Helloworld/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/jakejacobs/jake/code/azure_devops/hello_world/Helloworld/Helloworld/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "/home/jakejacobs/jake/code/azure_devops/dotnet_app/Helloworld/Helloworld/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/jakejacobs/jake/code/azure_devops/dotnet_app/Helloworld/Helloworld/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],
