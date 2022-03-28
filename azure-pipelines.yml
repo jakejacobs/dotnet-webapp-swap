@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
-- master
+- none
 
 pool:
   name: dotnetagent
@@ -16,24 +16,28 @@ variables:
 
 steps:
 - task: DotNetCoreCLI@2
+  displayName: 'Dotnet Restore'
   inputs:
     command: 'restore'
     projects: '$(buildTarget)'
     feedsToUse: 'select'
 
 - task: DotNetCoreCLI@2
+  displayName: 'Dotnet Build'
   inputs:
     command: 'build'
     projects: '$(buildTarget)'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
+  displayName: 'Dotnet Publish'
   inputs:
     command: 'publish'
     publishWebProjects: true
     arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
 
 - task: PublishBuildArtifacts@1
+  displayName: 'Dotnet Publish artifact'
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
