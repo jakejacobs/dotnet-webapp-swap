@@ -12,18 +12,19 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  buildTarget: 'Helloworld.csproj'
 
 steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    projects: '**/*.csproj'
+    projects: '$(buildTarget)'
     feedsToUse: 'select'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '**/*.csproj'
+    projects: '$(buildTarget)'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
@@ -38,10 +39,10 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Free Trial(05908f7d-3c8d-4334-b5b2-0ced6b72284f)'
-    appType: 'webAppLinux'
-    WebAppName: 'peppydontnet'
-    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+# - task: AzureRmWebAppDeployment@4
+#   inputs:
+#     ConnectionType: 'AzureRM'
+#     azureSubscription: 'Free Trial(05908f7d-3c8d-4334-b5b2-0ced6b72284f)'
+#     appType: 'webAppLinux'
+#     WebAppName: 'peppydontnet'
+#     packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
